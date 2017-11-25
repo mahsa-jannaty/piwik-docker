@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     zip \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -k https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz | tar zx -C /workdir/
+RUN curl -k https://builds.piwik.org/piwik-3.2.1-b1.tar.gz | tar zx -C /workdir/
 
 # Add configuration files
 ADD config/default.conf /etc/nginx/conf.d/default.conf
