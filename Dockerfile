@@ -25,5 +25,3 @@ RUN chown -R 104:0 /var/www && chmod -R 777 /var/www && \
 
 EXPOSE 5000
 USER 104
-
-VOLUME ["/var/www/piwik"]
