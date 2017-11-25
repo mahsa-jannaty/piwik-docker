@@ -1,4 +1,4 @@
-FROM jubicoy/nginx-php:latest
+FROM jubicoy/nginx-php:php7
 ENV PIWIK_VERSION latest
 
 RUN apt-get update && apt-get install -y \
